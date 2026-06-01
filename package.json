@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-bases-emma",
+  "version": "1.0.0",
+  "description": "CRUD Banco UCR - Capas Presentacion/Logica/Datos",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "escenario1": "node scripts/escenario1.js",
+    "escenario2": "node scripts/escenario2.js",
+    "escenario3": "node scripts/generar_xml.js",
+    "escenario4": "node scripts/escenario4.js",
+    "poblar": "node scripts/poblar_datos.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "msnodesqlv8": "^5.2.0",
+    "mssql": "^11.0.1"
+  }
+}
