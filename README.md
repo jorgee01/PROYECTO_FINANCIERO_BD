@@ -175,6 +175,12 @@ pnpm start
 
 ---
 
+## FRONTEND
+```bash
+# en bash/cmd node src/app.js
+
+```
+
 ## Scripts disponibles
 
 | Comando | Descripción |
