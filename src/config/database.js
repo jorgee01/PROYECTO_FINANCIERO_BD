@@ -1,20 +1,9 @@
 const sql = require('mssql/msnodesqlv8');
-const { execSync } = require('child_process');
-
-function getLocalDbPipe() {
-    try {
-        const out = execSync('SqlLocalDB info MSSQLLocalDB', { encoding: 'utf8' });
-        const match = out.match(/canaliza[^\r\n]+:\s*(.+)/);
-        if (match) {
-            const pipe = match[1].replace('np:', '').trim();
-            return pipe;
-        }
-    } catch (_) {}
-    return '(localdb)\\MSSQLLocalDB';
-}
 
 const config = {
-    connectionString: `Driver={ODBC Driver 17 for SQL Server};Server=${getLocalDbPipe()};Database=Grupo1_BancoUCR;Trusted_Connection=yes;`,
+    connectionString: `Driver={ODBC Driver 17 for SQL Server};Server=PCJEREMY;Database=Grupo1_BancoUCR;Trusted_Connection=yes;`,
+    connectionTimeout: 10000,
+    requestTimeout: 10000,
     options: {
         trustServerCertificate: true
     }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Banco UCR - Búsqueda Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="layout">
+
+        <section class="hero">
+            <div>
+                <span class="badge">Sistema SICVECA</span>
+                <h1>Banco UCR</h1>
+                <p>
+                    Búsqueda inteligente de personas del padrón electoral y creación de productos financieros.
+                </p>
+            </div>
+
+            <div class="hero-card">
+                <strong>Estado del sistema</strong>
+                <span>Frontend conectado a Node.js + SQL Server</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <div>
+                    <h2>Buscar persona</h2>
+                    <p>Digite nombre, apellido o cédula parcial.</p>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="txtBusqueda" 
+                    placeholder="Ejemplo: juan, mora, 101..."
+                    autocomplete="off"
+                >
+                <button id="btnBuscar">Buscar</button>
+            </div>
+
+            <div id="resultados" class="resultados"></div>
+        </section>
+
+        <section class="card oculto" id="panelPersona">
+            <div class="card-header">
+                <div>
+                    <h2>Persona seleccionada</h2>
+                    <p>Información obtenida desde el padrón.</p>
+                </div>
+                <span class="status">Seleccionada</span>
+            </div>
+
+            <div id="datosPersona" class="datos-persona"></div>
+
+            <div class="productos-persona">
+                <div class="card-header productos-header">
+                    <div>
+                        <h3>Productos de la persona</h3>
+                        <p>Productos financieros registrados para este cliente.</p>
+                    </div>
+                </div>
+
+                <div id="listaProductosPersona">
+                    <p class="aviso">Seleccione una persona para ver sus productos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card oculto" id="panelProducto">
+            <div class="card-header">
+                <div>
+                    <h2>Agregar producto financiero</h2>
+                    <p>Este proceso crea el escenario manual desde el frontend.</p>
+                </div>
+            </div>
+
+            <form id="formProducto" class="form-grid">
+
+                <div class="form-group">
+                    <label>Tipo de producto</label>
+                    <select id="C_id_tipo_producto" required>
+                        <option value="">Seleccione un producto...</option>
+                        <option value="1">1 - Cuenta Vista</option>
+                        <option value="2">2 - Depósito a Plazo</option>
+                        <option value="3">3 - Cuenta Expediente Simplificado</option>
+                        <option value="4">4 - Cuenta Planilla</option>
+                        <option value="5">5 - Depósito Judicial</option>
+                        <option value="6">6 - Crédito Directo</option>
+                        <option value="7">7 - Crédito Hipotecario</option>
+                        <option value="8">8 - Tarjeta de Crédito</option>
+                        <option value="9">9 - Línea de Crédito</option>
+                        <option value="10">10 - Descuento de Facturas</option>
+                        <option value="11">11 - Arrendamiento Financiero</option>
+                        <option value="12">12 - Aval y Garantía</option>
+                        <option value="13">13 - Transferencia de Fondos</option>
+                        <option value="14">14 - Remesa</option>
+                        <option value="15">15 - Compra Venta de Divisas</option>
+                        <option value="16">16 - Fideicomiso</option>
+                        <option value="17">17 - Cajero Automático</option>
+                        <option value="18">18 - Banca en Línea</option>
+                        <option value="19">19 - Caja de Seguridad</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nombre del producto</label>
+                    <input 
+                        type="text" 
+                        id="D_nombre" 
+                        placeholder="Ejemplo: Cuenta Vista" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label id="lblMonto">Monto</label>
+                    <input 
+                        type="number" 
+                        id="M_monto" 
+                        placeholder="Ejemplo: 500000" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group" id="grupoIngresos">
+                    <label>Ingresos del cliente</label>
+                    <input 
+                        type="number" 
+                        id="N_ingresos" 
+                        placeholder="Ejemplo: 650000"
+                    >
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Crear escenario</button>
+                </div>
+            </form>
+        </section>
+
+        <div id="mensaje"></div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

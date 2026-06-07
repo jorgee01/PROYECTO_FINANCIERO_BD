@@ -2,7 +2,7 @@ const BaseController = require('./base.controller');
 const ClienteController = require('./cliente.controller');
 const PadronController = require('./padron.controller');
 const services = require('../services');
-
+const EscenarioController = require('./escenario.controller');
 const ROUTES = {
   Producto: 'productos',
   Cliente_Producto: 'clientes-productos',
@@ -35,5 +35,5 @@ for (const [serviceName, route] of Object.entries(ROUTES)) {
 
 controllers.Cliente = new ClienteController(services.Cliente, 'clientes');
 controllers.Padron = new PadronController();
-
+controllers.Escenario = new EscenarioController();
 module.exports = controllers;

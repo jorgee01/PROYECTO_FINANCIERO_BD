@@ -8,77 +8,77 @@
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>MEDIO</TipoRiesgo>
-        <NumeroClientes>47</NumeroClientes>
-        <PorcentajeClientes>92.16</PorcentajeClientes>
-    </Registro>
-    <Registro>
-        <Mes>6</Mes>
-        <TipoRiesgo>BAJO</TipoRiesgo>
-        <NumeroClientes>4</NumeroClientes>
-        <PorcentajeClientes>7.84</PorcentajeClientes>
+        <NumeroClientes>173</NumeroClientes>
+        <PorcentajeClientes>100.00</PorcentajeClientes>
     </Registro>
     </CuadroA>
     <CuadroD>
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>MEDIO</TipoRiesgo>
-        <CantidadOperaciones>9</CantidadOperaciones>
-        <MontoTotal>31200000</MontoTotal>
+        <CantidadOperaciones>95</CantidadOperaciones>
+        <MontoTotal>574950000</MontoTotal>
+    </Registro>
+    <Registro>
+        <Mes>6</Mes>
+        <TipoRiesgo>BAJO</TipoRiesgo>
+        <CantidadOperaciones>99</CantidadOperaciones>
+        <MontoTotal>825000000</MontoTotal>
     </Registro>
     </CuadroD>
     <CuadroE>
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>MEDIO</TipoRiesgo>
-        <CantidadOperaciones>16</CantidadOperaciones>
-        <MontoTotal>4750000</MontoTotal>
+        <CantidadOperaciones>136</CantidadOperaciones>
+        <MontoTotal>46030000</MontoTotal>
     </Registro>
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>BAJO</TipoRiesgo>
-        <CantidadOperaciones>2</CantidadOperaciones>
-        <MontoTotal>1100000</MontoTotal>
+        <CantidadOperaciones>135</CantidadOperaciones>
+        <MontoTotal>38700000</MontoTotal>
     </Registro>
     </CuadroE>
     <CuadroF>
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>MEDIO</TipoRiesgo>
-        <CantidadOperaciones>11</CantidadOperaciones>
-        <MontoTotal>25000000</MontoTotal>
+        <CantidadOperaciones>83</CantidadOperaciones>
+        <MontoTotal>78800000</MontoTotal>
     </Registro>
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>BAJO</TipoRiesgo>
-        <CantidadOperaciones>1</CantidadOperaciones>
-        <MontoTotal>2000000</MontoTotal>
+        <CantidadOperaciones>87</CantidadOperaciones>
+        <MontoTotal>44800000</MontoTotal>
     </Registro>
     </CuadroF>
     <CuadroG>
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>MEDIO</TipoRiesgo>
-        <ClientesConOperaciones>47</ClientesConOperaciones>
+        <ClientesConOperaciones>171</ClientesConOperaciones>
     </Registro>
     <Registro>
         <Mes>6</Mes>
         <TipoRiesgo>BAJO</TipoRiesgo>
-        <ClientesConOperaciones>4</ClientesConOperaciones>
+        <ClientesConOperaciones>210</ClientesConOperaciones>
     </Registro>
     </CuadroG>
     <CuadroH>
-    <!-- Sin reclasificaciones en el periodo -->
+    <Registro>
+        <Mes>6</Mes>
+        <RiesgoAnterior>BAJO</RiesgoAnterior>
+        <RiesgoNuevo>MEDIO</RiesgoNuevo>
+        <CantidadClientes>53</CantidadClientes>
+    </Registro>
     </CuadroH>
     <CuadroI>
     <Registro>
-        <Pais>Costa Rica</Pais>
+        <Pais>NO ESPECIFICADO</Pais>
         <TipoRiesgo>MEDIO</TipoRiesgo>
-        <CantidadClientes>47</CantidadClientes>
-    </Registro>
-    <Registro>
-        <Pais>Costa Rica</Pais>
-        <TipoRiesgo>BAJO</TipoRiesgo>
-        <CantidadClientes>4</CantidadClientes>
+        <CantidadClientes>173</CantidadClientes>
     </Registro>
     </CuadroI>
 </SICVECA>
